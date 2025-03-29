@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form Validation System</title>
+    <script src="jquery.js"></script>
+    <style>
+        body{
+            font-family :Arial, Helvetica, sans-serif;
+            font-size: 130%;
+        }
+        .wrapper{
+            width: 550px;
+            margin: 0 auto;
+        }
+        label{
+            width : 200px;
+            float : left;
+            position: relative;
+            top : 12px;
+        }
+        input{
+            width : 320px;
+            font-size : 25px;
+            border : 1px solid greenyellow;
+            border-radius: 5px;
+            padding: 5px 5px 12px 5px ;
+        }
+        .formElement{
+            margin-bottom: 10px;
+        }
+        #submitButton{
+             width : 130px;
+             margin-left: 200px;
+             margin-top: 25px;
+        }
+        #error{
+            color: red;
+            font-size: 30px;
+        }
+        #success{
+            color:greenyellow;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="error"></div>
+    <div id="success"></div>
+    <div class="wrapper">
+        <div class="formElement">
+            <label for="Email">Email : </label>
+            <input type="text" id="Email" name="Email">
+        </div>
+
+       <div class="formElement">
+          <label for="Phone">Phone : </label>
+          <input type="text" id="Phone" name="Phone">
+        </div>  
+
+        <div class="formElement">
+            <label for="password">Password : </label>
+            <input type="password" id="password" name="password">
+        </div>  
+
+        
+        <div class="formElement">
+            <label for="confirmPassword">Confirm-Password : </label>
+            <input type="password" id="confirmPassword" name="confirmPassword">
+        </div>  
+        <input id="submitButton" type="submit">
+   </div>
+  <script>
+    var errormessage = "";
+    var missingfeild = "";
+    function isEmail(email){
+        var regex =  /^\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i
+        return regex.test(email); 
+    }
+    $("#submitButton").click(function(){
+        if($("#Email").val() == ""){
+            missingfeild += "<p>Email is not filled</p>";
+        }
+        if($("#Phone").val() == ""){
+            missingfeild += "<p>Phone no. is not filled</p>";
+        }
+        if($("#password").val() == ""){
+            missingfeild += "<p>Password is not filled</p>";
+        }
+
+        if(isEmail($("#Email").val()) == false){
+             errormessage += "<p>Email id is not valid.</p>";
+        }
+        if($.isNumeric($("#Phone").val()) == false ){
+            errormessage += "<p> number is not valid.</p>";
+        }
+        if($("#password").val() != $("#confirmPassword").val()){
+            errormessage += "<p>Password does not match.</p>";
+        }
+       if (errormessage == "") {
+           $("#success").html("You are registered");
+       } else {
+           $("#error").html(errormessage + missingfeild);
+       }   
+    });
+   
+  </script>
+    
+</body>
+</html>
