@@ -1,0 +1,32 @@
+#shape{
+    width: 60px;
+    height: 60px;
+    background-color: #d87093;
+    border-radius: 50%;
+    position:absolute;
+    border-color: black;
+  }
+  h1,p{
+    margin-top: 1px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    color: rgb(92, 42, 92);
+
+  }
+  body {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    margin: 0;
+ }
+  #first{
+    height: 600px;
+    width: 950px;
+    border: 2px solid rgb(92, 42, 92);
+    background-color: rgb(233, 204, 208);
+    position: relative;
+    padding-top: 100px; 
+    box-sizing: border-box;
+  }
