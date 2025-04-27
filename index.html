@@ -2,126 +2,125 @@
 <html>
 
 <head>
-	<title>
-		Putting all it together 
-	</title>
+    <title>Putting all it together</title>
 </head>
 
 <body>
-	<h1>Hello World!</h1>  <!--biggest heading with more importance-->
-        <h4> I am reshmi.</h4> 
-        <br>   <!--give break--> 
+    <h1>Hello World!</h1> <!-- biggest heading with more importance -->
+    <h4>I am reshmi.</h4>
+    <br> <!-- give break -->
+    <hr>
+    <h6>I am student of computer science</h6>
+    <hr>
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNQYYhJKr47R8_bCYxI6-CoRYlXkoNKx5VmwexAMHlawY5KL_mq9Qj65gPQLVLMaFN1hs&usqp=CAU"
+        alt="image" height="300px" />
+    <hr> <!-- for creating horizontal rule -->
+    <a href="https://www.youtube.com/watch?v=JJPdkXOz8-I&pp=ygUUbWFpbiBob29uIHNhYXRoIHRlcmU%3D">Gaana</a> <!-- anchor just like hyperlink -->
+    <hr>
+
+    <p><b>I am in 4th sem CS branch</b></p> <br> <hr> <!-- paragraph with bold tag -->
+    <p><i>Takshshila institute</i></p> <br> <hr>
+    <p><u>My hobby is poetry writing and singing</u></p> <br> <hr>
+    <p><s>It is my first program of HTML</s></p> <br> <hr>
+
+    <pre>hello ,
+        it is an interesting language.
+        thankyou 
+    </pre> <br> <hr> <!-- this tag is for copy paste as it is -->
+
+    <p>(a+b)(a-b) = a<sup>2</sup> + b<sup>2</sup></p> <br> <hr>
+    <p>CH<sub>4</sub> O<sub>2</sub> = H<sub>2</sub>O + CO<sub>2</sub></p> <br> <hr>
+
+    <nav>
+
+        <div class="heading">
+            <h4>Navigation Bar</h4>
+        </div>
+
+        <ul class="nav-links">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="https://www.youtube.com/watch?v=BdckBdgZ4Mk&pp=ygUYdHVtIHByZW0gaG8gdHVtIHByZWV0IGhv">Radha_Krishna</a></li>
+        </ul>
+
+    </nav>
+    <hr>
+
+    <h5>Student Data</h5>
+    <table border="1">
+        <tr>
+            <th><b>Name</b></th>
+            <th><b>Department</b></th>
+            <th><b>Sem</b></th>
+        </tr>
+        <tr>
+            <td>Reshmi</td>
+            <td>CS</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>Vashu</td>
+            <td>CS</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>Divu</td>
+            <td>CE</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td colspan="3">You can add more student's data</td>
+        </tr>
+    </table>
+    <hr>
+
+    <form> <!-- like form filling -->
+        UserId: <input type="text" placeholder="enter your id"><br>
+        Password: <input type="password" required> <br>
+        <input type="submit"><hr>
+
+        Date: <input type="date"><br>
+        File: <input type="file"><br>
+        Price Range: <input type="range"><br>
+        Button: <input type="button" value="click me"><br>
+        Submit: <input type="submit">
         <hr>
-        <h6>i am student of computer science</h6><hr>
 
-        <image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNQYYhJKr47R8_bCYxI6-CoRYlXkoNKx5VmwexAMHlawY5KL_mq9Qj65gPQLVLMaFN1hs&usqp=CAU"
-         alt= "image"
-         height="300px"/>
-        <hr>  <!for creating horizontal rule>
-        <a href = "https://www.youtube.com/watch?v=JJPdkXOz8-I&pp=ygUUbWFpbiBob29uIHNhYXRoIHRlcmU%3D"> Gaana </a> <!anchor just like hyperlink><hr>
+        <label>Male:</label> <!-- radio like multiple choice -->
+        <input type="radio" name="gender" value="male"><br>
 
-        <p><b>i am in 4th sem CS branch</b></p> <br> <hr><!paragraph with bold tag>
-        <P><i>takshshila institute</i></P> <br> <hr>
-        <P><u>my hobby is poetry writing and singing </u></P> <br><hr>
-        <p><s>it is a my first program of HTML</s></p> <br><hr>
+        <label for="female">Female:</label>
+        <input type="radio" id="female" name="gender" value="female"><br>
 
-        <pre>hello ,
-                it is an interesting language.
-                thankyou 
-        </pre> <br> <hr> <!this tag is for copy paste as it is>
+        <label for="other">Other:</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <hr>
 
-        <p>(a+b) (a-b)=a<sup>2</sup> + b<sup>2</sup></p> <br> <hr>
-        <p>CH<sub>4</sub> O<sub>2</sub> = H<sub>2</sub>O + CO <sub>2</sub></p> <br><hr>
+        <label for="html">HTML:</label> <!-- checkbox like multiple select -->
+        <input type="checkbox" id="html" name="lang"><br>
 
-        <nav>
+        <label for="python">PYTHON:</label>
+        <input type="checkbox" id="python" name="lang">
+        <hr>
 
-                <div class="heading">
-          
-                  <h4>Navigation Bar</h4>
-          
-                </div>
-          
-                <ul class="nav-links">
-          
-                  <li><a class="active" href="index.html">Home</a></li>
-          
-                  <li><a href="https://www.youtube.com/watch?v=BdckBdgZ4Mk&pp=ygUYdHVtIHByZW0gaG8gdHVtIHByZWV0IGhv">Radha_Krishna</a></li>
-          
-                </ul>
-          
-        </nav><hr>
-        <h5>Student Data</h5>
-        <table border="1">
-                <tr>
-                   <th><b>Name</b></th>
-                   <th><b>Department</b></th>
-                   <th><b>Sem</b></th>
-                </tr>
-                <tr>
-                   <td>Reshmi</td>
-                   <td>CS</td>
-                   <td>4</td>
-                </tr>
-                <tr>
-                   <td>Vashu</td>
-                   <td>CS</td>
-                   <td>2</td>
-                <tr>
-                </tr>
-                   <td>Divu</td>
-                   <td>CE</td>
-                   <td>4</td>
-                </tr>
-                <tr>
-                   <td colspan="2">you can add more student's data</td>
-                </tr>
-         </table><hr>
+        <label for="country">Select Your Country: </label> <!-- select any choice -->
+        <select name="country" id="country">
+            <option value="India">INDIA</option>
+            <option value="uk">UK</option>
+            <option value="us">US</option>
+            <option value="other">OTHER</option>
+        </select>
+        <hr>
 
-         <form>      <!like form filling>
-              USerId:<input type="text" placeholder="enter your id"><br>
-              Password:<input type="password" required="true"> <br>
-              <input type="Submit"><hr>
+        <textarea name="story" id="story" cols="10" rows="30">Start writing your story from here</textarea>
+    </form>
+    <hr>
 
-              Date:<input type="date"><br>
-              File:<input type="file"><br>
-              Price Range: <input type="range"><br>
-              Button:<input type="button" value="click me"><br>
-              Submit:<input type="submit">
-              <hr>
-              
-              <lable>Male:</lable>                      <!radio like multiple choice>
-              <input type="radio" name="gender" value="male"><br>
-              
-              <lable for ="female">Female:</lable>
-              <input type="radio" id="female" name="gender" value="female"><br>
-               
-              <lable for ="other">Other:</lable>
-              <input type="radio" id="other" name="gender" value="other"><hr>
+    <iframe width="600" height="700" src="https://www.wikipedia.org/"></iframe>
+    <hr>
 
+    <!-- <iframe width="600" height="700" src="https://www.instagram.com/"></iframe> <hr> -->
 
-              <lable for ="html">HTML:</lable>                 <!checkbox like multiple select>
-              <input type="checkbox" id="html" name="lang"><br> 
-              <lable for ="python">PYTHON:</lable>
-              <input type="checkbox" id="python" name="lang"><hr>
-
-              <lable for="country">Select Your Country: </label>     <!select any choice>
-              <select name ="country" id="country">
-                        <option value="India">INDIA</option>
-                        <option value="uk">UK</option>
-                        <option value="us">US</option>
-                        <option value="other">OTHER</option>
-              </select><hr>
-             
-              <textarea name="story" id="story" cols="10" rows="30"> Start to writing your story from here </textarea>
-         </form><hr>
-           
-          
-         <iframe width="600" height="700" src="https://www.wikipedia.org/"></iframe> <hr>   <!as it is open any web page>
-     
-        <!-- <iframe width="600" height="700" src="https://www.instagram.com/"></iframe> <hr>  -->
-           
-
-        
 </body>
 
 </html>
