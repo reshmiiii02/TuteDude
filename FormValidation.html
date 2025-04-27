@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>Form Validation System</title>
-    <script src="jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <style>
         body{
             font-family :Arial, Helvetica, sans-serif;
@@ -77,6 +77,11 @@
         return regex.test(email); 
     }
     $("#submitButton").click(function(){
+        errormessage = "";
+        missingfeild = "";
+        $("#error").html("");
+        $("#success").html("");
+
         if($("#Email").val() == ""){
             missingfeild += "<p>Email is not filled</p>";
         }
