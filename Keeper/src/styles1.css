@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background: #eee;
+    padding: 16px;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 3rem;
+}
+
+.header {
+    background-color: #f5ba13;
+    margin: auto -16px;
+    padding: 16px 32px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header h1 {
+    color: #fff;
+    font-family: "McLaren", cursive;
+    font-weight: 200;
+}
+
+.footer {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    padding: 0.5rem 0;
+    background: white;
+}
+
+footer p {
+    color: #ccc;
+}
+
+.note {
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px #ccc;
+    padding: 10px;
+    width: 240px;
+    margin: 16px;
+    float: left;
+    position: relative;
+    min-height: 120px;
+}
+
+.note h1 {
+    font-size: 1.1em;
+    margin-bottom: 6px;
+    word-wrap: break-word;
+    padding-right: 50px;
+}
+
+.note p {
+    font-size: 1.1em;
+    margin-bottom: 40px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.note .delete-button {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background: #f5ba13;
+    color: #fff;
+    border: none;
+    width: 60px;
+    height: 24px;
+    border-radius: 12px;
+    cursor: pointer;
+    outline: none;
+    font-size: 0.8em;
+    transition: all 0.3s ease;
+}
+
+.note .delete-button:hover {
+    background: #e0a912;
+}
+
+.create-note {
+    position: relative;
+    width: 480px;
+    margin: 30px auto 20px auto;
+    background: #fff;
+    padding: 15px;
+    border-radius: 7px;
+    box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+
+.create-note input,
+.create-note textarea {
+    width: 100%;
+    border: none;
+    padding: 4px;
+    outline: none;
+    font-size: 1.2em;
+    resize: none;
+    font-family: inherit;
+}
+
+.create-note button {
+    position: absolute;
+    right: 18px;
+    bottom: -18px;
+    background: #f5ba13;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    outline: none;
+    font-size: 24px;
+    transition: all 0.3s ease;
+}
+
+.create-note button:hover {
+    background: #e0a912;
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .create-note {
+        width: 100%;
+        margin: 20px auto;
+    }
+    
+    .note {
+        width: calc(50% - 32px);
+        margin: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .note {
+        width: 100%;
+        margin: 16px 0;
+    }
+    
+    body {
+        padding: 8px;
+    }
+}   
